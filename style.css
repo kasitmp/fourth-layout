@@ -1,0 +1,86 @@
+.parent {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  }
+  
+  .navLeft { 
+    grid-area: 1 / 1 / 2 / 2; 
+    background-color: #bbb;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  }
+
+  .navCenter { 
+    grid-area: 1 / 2 / 2 / 7;
+    background-color: #bbb;
+  }
+
+  .navRight { 
+    grid-area: 1 / 7 / 2 / 8; 
+    background-color: #bbb;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  }
+  
+  .leftCol1 { 
+    grid-area: 2 / 1 / 4 / 2; 
+    background-color: #bbb;
+  }
+  .leftCol2 { 
+    grid-area: 4 / 1 / 6 / 2; 
+    background-color: #bbb;
+  }
+
+  .rightCol1 { 
+    grid-area: 2 / 7 / 4 / 8;
+    background-color: #bbb;
+  }
+
+  .content1 { 
+    grid-area: 2 / 2 / 4 / 5; 
+    background-color: #bbb;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .content1 > .date {
+    grid-area: 1 / 1 / 3 / 2;
+    padding: 0 0 0 0;
+    background-color: pink;
+    writing-mode: vertical-lr;
+  }
+
+  .content1 > .text {
+    grid-area: 3 / 1 / 3 / 3;
+    background-color: #444;
+  }
+
+  .content1 > .image {
+    grid-area: 1 / 2 / 4 / 4;
+    background-color: #ddd;
+    clip-path: circle(at 60%);
+  }
+  
+  .content2 { 
+    grid-area: 2 / 5 / 5 / 7;
+    background-color: #bbb;
+  }
+  
+  .party1 { 
+    grid-area: 4 / 2 / 5 / 5; 
+    background-color: #bbb;
+  }
+  
+  .content3 { 
+    grid-area: 5 / 2 / 6 / 4; 
+    background-color: #bbb;
+  }
+  
+  .content4 { 
+    grid-area: 5 / 4 / 6 / 7; 
+    background-color: #bbb;
+  }
