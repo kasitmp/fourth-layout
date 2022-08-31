@@ -2,8 +2,8 @@
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: 2fr repeat(5, 1fr) 2fr;
+  grid-template-rows: 1fr repeat(4, 2fr);
   grid-column-gap: 5px;
   grid-row-gap: 5px;
   }
@@ -26,61 +26,122 @@
   }
   
   .leftCol1 { 
-    grid-area: 2 / 1 / 4 / 2; 
+    grid-area: 2 / 1 / 4 / 2;
+    display: grid; 
     background-color: #bbb;
-  }
-  .leftCol2 { 
-    grid-area: 4 / 1 / 6 / 2; 
-    background-color: #bbb;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
   }
 
-  .rightCol1 { 
-    grid-area: 2 / 7 / 4 / 8;
-    background-color: #bbb;
+  .leftCol1 > .image {
+    grid-area: 1 / 1 / 1 / 2;
+    background-image: url(./assets/lucas-favre-JnoNcfFwrNA-unsplash.jpg);
+    background-size: cover;
+    clip-path: circle(at 50%);
+  }
+
+  .leftCol1 > .text {
+    grid-area: 2 / 1 / 2 / 2;
   }
 
   .content1 { 
-    grid-area: 2 / 2 / 4 / 5; 
-    background-color: #bbb;
+    grid-area: 2 / 2 / 4 / 7; 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 2fr 2fr;
+    grid-template-rows: 3fr 1fr;
+  }
+
+  .content1 > .background {
+    grid-area: 1 / 2 / 3 / 4;
+    background-color: cyan;
   }
 
   .content1 > .date {
-    grid-area: 1 / 1 / 3 / 2;
+    grid-area: 1 / 1 / 2 / 1;
     padding: 0 0 0 0;
     background-color: pink;
     writing-mode: vertical-lr;
   }
 
   .content1 > .text {
-    grid-area: 3 / 1 / 3 / 3;
+    grid-area: 2 / 1 / 2 / 4;
     background-color: #444;
   }
 
   .content1 > .image {
-    grid-area: 1 / 2 / 4 / 4;
-    background-color: #ddd;
+    grid-area: 1 / 2 / 5 / 7;
+    clip-path: circle(at 60%);
+    background-size: cover;
+    background-image: url(./assets/fitsum-admasu-oGv9xIl7DkY-unsplash.jpeg);
+  }
+
+  .content2 { 
+    grid-area: 4 / 2 / 6 / 7; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr;
+    grid-template-rows: 3fr 1fr;
+  }
+
+  .content2 > .background {
+    grid-area: 1 / 2 / 3 / 4;
+    background-color: cyan;
+  }
+
+  .content2 > .date {
+    grid-area: 1 / 1 / 2 / 1;
+    padding: 0 0 0 0;
+    background-color: pink;
+    writing-mode: vertical-lr;
+  }
+
+  .content2 > .text {
+    grid-area: 2 / 1 / 2 / 4;
+    background-color: #444;
+  }
+
+  .content2 > .image {
+    grid-area: 1 / 2 / 5 / 7;
+    background-image: url(./assets/vherliann-WwqGz6dtOn4-unsplash.jpeg);
+    background-size: cover;
+    background-position: 50% 70%;
     clip-path: circle(at 60%);
   }
-  
-  .content2 { 
-    grid-area: 2 / 5 / 5 / 7;
+
+  .rightCol1 { 
+    grid-area: 2 / 7 / 4 / 8;
+    display: grid; 
     background-color: #bbb;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
   }
-  
-  .party1 { 
-    grid-area: 4 / 2 / 5 / 5; 
-    background-color: #bbb;
+
+  .rightCol1 > .image {
+    grid-area: 1 / 1 / 1 / 2;
+    background-image: url(./assets/artworks-000561072705-gox70p-t500x500.jpeg);
+    background-size: cover;
+    clip-path: circle(at 50%);
   }
-  
-  .content3 { 
-    grid-area: 5 / 2 / 6 / 4; 
-    background-color: #bbb;
+
+  .rightCol1 > .text {
+    grid-area: 2 / 1 / 2 / 2;
+    
   }
-  
-  .content4 { 
-    grid-area: 5 / 4 / 6 / 7; 
+
+  .rightCol2 { 
+    grid-area: 4 / 7 / 6 / 8; 
+    display: grid; 
     background-color: #bbb;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+  }
+
+  .rightCol2 > .image {
+    grid-area: 1 / 1 / 1 / 2;
+    background-image: url(./assets/david-pisnoy-UJUgBnemP7o-unsplash.jpeg);
+    background-size: cover;
+    clip-path: circle(at 50%);
+  }
+
+  .rightCol2 > .text {
+    grid-area: 2 / 1 / 2 / 2;
   }
