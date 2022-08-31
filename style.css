@@ -72,7 +72,7 @@
     grid-area: 1 / 2 / 5 / 7;
     clip-path: circle(at 60%);
     background-size: cover;
-    background-image: url(./assets/fitsum-admasu-oGv9xIl7DkY-unsplash.jpeg);
+    background-image: url(./assets/fitsum-admasu-oGv9xIl7DkY-unsplash.jpg);
   }
 
   .content2 { 
@@ -99,7 +99,7 @@
 
   .content2 > .image {
     grid-area: 1 / 2 / 5 / 7;
-    background-image: url(./assets/vherliann-WwqGz6dtOn4-unsplash.jpeg);
+    background-image: url(./assets/vherliann-WwqGz6dtOn4-unsplash.jpg);
     background-size: cover;
     background-position: 50% 70%;
     clip-path: circle(at 60%);
@@ -115,7 +115,7 @@
 
   .rightCol1 > .image {
     grid-area: 1 / 1 / 1 / 2;
-    background-image: url(./assets/artworks-000561072705-gox70p-t500x500.jpeg);
+    background-image: url(./assets/artworks-000561072705-gox70p-t500x500.jpg);
     background-size: cover;
     clip-path: circle(at 50%);
   }
@@ -135,7 +135,7 @@
 
   .rightCol2 > .image {
     grid-area: 1 / 1 / 1 / 2;
-    background-image: url(./assets/david-pisnoy-UJUgBnemP7o-unsplash.jpeg);
+    background-image: url(./assets/david-pisnoy-UJUgBnemP7o-unsplash.jpg);
     background-size: cover;
     clip-path: circle(at 50%);
   }
