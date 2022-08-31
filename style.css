@@ -6,29 +6,31 @@
   grid-template-rows: 1fr repeat(4, 2fr);
   grid-column-gap: 5px;
   grid-row-gap: 5px;
+  background-color: #E0D3Df;
+  color: #08131D;
   }
   
   .navLeft { 
     grid-area: 1 / 1 / 2 / 2; 
-    background-color: #bbb;
+    background-color: #2EB6DB;
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
   }
 
   .navCenter { 
     grid-area: 1 / 2 / 2 / 7;
-    background-color: #bbb;
+    background-color: #2EB6DB  
   }
 
   .navRight { 
     grid-area: 1 / 7 / 2 / 8; 
-    background-color: #bbb;
+    background-color: #2EB6DB ;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   }
   
   .leftCol1 { 
     grid-area: 2 / 1 / 4 / 2;
     display: grid; 
-    background-color: #bbb;
+    background-color: #ADC0C6;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 1fr;
   }
@@ -52,20 +54,18 @@
   }
 
   .content1 > .background {
-    grid-area: 1 / 2 / 3 / 4;
-    background-color: cyan;
+    grid-area: 1 / 1 / 3 / 4;
+    background-color: #FD63B3;
   }
 
   .content1 > .date {
     grid-area: 1 / 1 / 2 / 1;
     padding: 0 0 0 0;
-    background-color: pink;
     writing-mode: vertical-lr;
   }
 
   .content1 > .text {
     grid-area: 2 / 1 / 2 / 4;
-    background-color: #444;
   }
 
   .content1 > .image {
@@ -83,20 +83,18 @@
   }
 
   .content2 > .background {
-    grid-area: 1 / 2 / 3 / 4;
-    background-color: cyan;
+    grid-area: 1 / 1 / 3 / 4;
+    background-color: #2EB6DB;
   }
 
   .content2 > .date {
     grid-area: 1 / 1 / 2 / 1;
     padding: 0 0 0 0;
-    background-color: pink;
     writing-mode: vertical-lr;
   }
 
   .content2 > .text {
     grid-area: 2 / 1 / 2 / 4;
-    background-color: #444;
   }
 
   .content2 > .image {
@@ -110,7 +108,7 @@
   .rightCol1 { 
     grid-area: 2 / 7 / 4 / 8;
     display: grid; 
-    background-color: #bbb;
+    background-color: #ADC0C6;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 1fr;
   }
@@ -130,7 +128,7 @@
   .rightCol2 { 
     grid-area: 4 / 7 / 6 / 8; 
     display: grid; 
-    background-color: #bbb;
+    background-color: #ADC0C6;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 1fr;
   }
