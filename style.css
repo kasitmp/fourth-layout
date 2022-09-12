@@ -1,36 +1,61 @@
+
+h1 {
+  font-family: 'Sansita', sans-serif;
+  color: #364652;
+}
+
+h2 {
+  font-family: 'Dancing Script', cursive;
+  color: #364652;
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  color: #364652;
+  margin: 0
+}
+
+.text {
+  padding: 5px;
+}
+
 .parent {
-  width: 100vw;
-  height: 100vh;
+  padding: 5px 5px 0 5px;
+  height: calc(100vh - 5px);
   display: grid;
   grid-template-columns: 2fr repeat(5, 1fr) 2fr;
   grid-template-rows: 1fr repeat(4, 2fr);
-  grid-column-gap: 5px;
+  grid-column-gap: 10px;
   grid-row-gap: 5px;
-  background-color: #E0D3Df;
-  color: #08131D;
+  background-color: #FFCB77;
   }
   
   .navLeft { 
     grid-area: 1 / 1 / 2 / 2; 
-    background-color: #2EB6DB;
+    background-color: #FEF9EF;
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    text-align: center;
   }
+
 
   .navCenter { 
     grid-area: 1 / 2 / 2 / 7;
-    background-color: #2EB6DB  
+    background-color: #FEF9EF;
+    text-align: center;
   }
 
   .navRight { 
     grid-area: 1 / 7 / 2 / 8; 
-    background-color: #2EB6DB ;
+    background-color: #FEF9EF ;
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    text-align: center;
   }
   
   .leftCol1 { 
     grid-area: 2 / 1 / 4 / 2;
     display: grid; 
-    background-color: #ADC0C6;
+    background-color: #2EB6DB;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 1fr;
   }
@@ -60,12 +85,13 @@
 
   .content1 > .date {
     grid-area: 1 / 1 / 2 / 1;
-    padding: 0 0 0 0;
     writing-mode: vertical-lr;
+    padding-top: 5px;
   }
 
   .content1 > .text {
     grid-area: 2 / 1 / 2 / 4;
+    padding-left: 5px;
   }
 
   .content1 > .image {
@@ -89,7 +115,7 @@
 
   .content2 > .date {
     grid-area: 1 / 1 / 2 / 1;
-    padding: 0 0 0 0;
+    padding-top: 5px;
     writing-mode: vertical-lr;
   }
 
@@ -108,7 +134,7 @@
   .rightCol1 { 
     grid-area: 2 / 7 / 4 / 8;
     display: grid; 
-    background-color: #ADC0C6;
+    background-color: #2EB6DB;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 1fr;
   }
@@ -128,7 +154,7 @@
   .rightCol2 { 
     grid-area: 4 / 7 / 6 / 8; 
     display: grid; 
-    background-color: #ADC0C6;
+    background-color: #2EB6DB;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 1fr;
   }
